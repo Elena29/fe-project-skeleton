@@ -1,11 +1,7 @@
 import React from 'react';
 
-class Todo extends React.Component {
-
+export default class Todo extends React.Component {
   render() {
-    return (<div>Hello List</div>);
+    return (<h2>Hello List</h2>);
   }
-
 }
-
-module.exports = Todo;
