@@ -18,3 +18,7 @@ ReactDOM.render((
     <Route path="like" component={Like} />
   </Router>
 ), document.getElementById('app'));
+
+if (module.hot) {
+    module.hot.accept('./App', () => render(App));
+}
