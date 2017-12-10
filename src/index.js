@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './containers/App';
 
+// Import all css files
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles/main.scss';
 
 const render = (Component) => {
@@ -14,5 +16,5 @@ const render = (Component) => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./App', () => render(App));
+  module.hot.accept('./containers/App', () => render(App));
 }

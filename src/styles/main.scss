@@ -1,5 +1,10 @@
+//Base styles for each pages
 @import 'base/_colors';
 
+//Styles related to different pages
+@import 'pages/about';
+@import 'pages/form';
+@import 'pages/home';
+
 body {
-  background: $green;
 }
