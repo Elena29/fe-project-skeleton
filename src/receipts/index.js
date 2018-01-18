@@ -1,33 +1,34 @@
-import React from 'react';
-import Receipt from './receipt';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Receipt from './receipt'
 
 export default class Receipts extends React.Component {
-    static propTypes = {
-        receipts: React.PropTypes.array.isRequired
-    }
+  renderReceipts () {
+    return (
+      <ul>
+        {
+          this.props.receipts.map(() => (
+            <li>
+              <Receipt title="test" text="test text" />
+            </li>
+          ))
+        }
+      </ul>
+    )
+  }
 
-    render() {
-        console.log(this.props.receipts);
-        return(
-            <div>
-                <Receipt title="test" text="test text"/>
-                <Receipt title="test2" text="test text2"/>
-            </div>
-        )
-    }
+  render () {
+    console.log(this.props.receipts)
+    return (
+      <div>
+        <Receipt title="test" text="test text" />
+        <Receipt title="test2" text="test text2" />
+      </div>
+    )
+  }
+}
 
-    renderReceipts() {
-        return (
-            <ul>
-                {
-                    this.props.receipts.map(item =>
-                        <li>
-                            <Receipt title="test" text="test text"/>
-                        </li>
-                    )
-                }
-            </ul>
-        )
-    }
+Receipts.propTypes = {
+  receipts: PropTypes.arrayOf(Receipt).isRequired,
 }
 

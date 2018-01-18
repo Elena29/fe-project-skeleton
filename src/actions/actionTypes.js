@@ -1,1 +1,1 @@
-export const ADD_NEW_RECEIPT = 'ADD_NEW_RECEIPT';
+export const ADD_NEW_RECEIPT = 'ADD_NEW_RECEIPT'

@@ -10,13 +10,13 @@ module.exports = {
     bundle: [
       'webpack-dev-server/client?http://127.0.0.1:8080/',
       'webpack/hot/only-dev-server',
-      'index'
+      'index',
     ],
   },
   output: {
     path: path.join(__dirname, '../public'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: '/',
   },
   resolve: {
     root: [path.join(__dirname, '../src')],

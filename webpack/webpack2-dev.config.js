@@ -30,11 +30,12 @@ module.exports = {
           babelrc: false,
           presets: [
             [
-              'es2015',
-              { modules: false },
+              'env',
+              {
+                modules: false,
+              },
             ],
             'react',
-            'stage-0',
           ],
           env: {
             development: {

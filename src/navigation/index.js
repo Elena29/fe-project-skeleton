@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const Navigation = () => (
-    <div className="navbar navbar-default navbar-fixed-top">
-        <ul className="nav navbar-nav">
-            <li className="active"><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/add">Add receipt</a></li>
-        </ul>
-    </div>
+  <div className="navbar navbar-default navbar-fixed-top">
+    <ul className="nav navbar-nav">
+      <li className="active"><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/add">Add receipt</a></li>
+    </ul>
+  </div>
 )
 
 export default Navigation

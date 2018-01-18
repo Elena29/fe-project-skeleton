@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, browserHistory } from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Header from '../header/index';
 import Receipts from './ReceiptsList';
@@ -19,12 +19,14 @@ const App = () => (
   <div>
     <Header />
     <Provider store={store}>
-        <Router history={browserHistory}>
+      <BrowserRouter>
+        <div>
           <Route path="/" component={Receipts} />
           <Route path="/about" component={About} />
           <Route path="/add" component={Form} />
           <Route path="*" component={NoMatch} />
-        </Router>
+        </div>
+      </BrowserRouter>
     </Provider>
   </div>
 );
